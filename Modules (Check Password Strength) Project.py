@@ -9,7 +9,7 @@
 import random
 import os
 
-# 1. Define characters (clean & readable)
+# 1. Define characters
 letters = "abcdefghijklmnopqrstuvwxyz"
 LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 digits = "0123456789"
@@ -54,7 +54,7 @@ else:
 
 print("Password strength:", strength)
 
-# 6. Save result in a file
+# 6. Saving the result
 if not os.path.exists("result"):
     os.mkdir("result")
 
@@ -66,3 +66,4 @@ with open(file, "w") as f:
     f.write("Strength: " + strength + "\n")
 
 print("Saved in file:", file)
+
